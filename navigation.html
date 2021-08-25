@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/Javascript" src="filterSelection.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Control buttons -->
+    <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> Tous</button>
+        <button class="btn" onclick="filterSelection('vins')"> VINS</button>
+        <button class="btn" onclick="filterSelection('spiritueux')"> SPIRITUEUX</button>
+        <button class="btn" onclick="filterSelection('bieres')"> BIERES</button>
+    </div>
+    <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> Tous</button>
+        <button class="btn" onclick="filterSelection('bieres')"> Couleur</button>
+        <button class="btn" onclick="filterSelection('spiritueux')"> Pays</button>
+        <button class="btn" onclick="filterSelection('vins')"> Régions</button>
+        <button class="btn" onclick="filterSelection('vins')"> Appelation</button>
+        <button class="btn" onclick="filterSelection('vins')"> Maison</button>
+
+    </div>
+
+    <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+    <div class="container">
+        <div class="filterDiv bieres">
+            <h2>Bière Abbatiale</h2><img src="Abbatiale.png" alt="bière Abbatiale" width="40%">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. </p>
+            <h3>8,99€</h3>
+        </div>
+        <div class="filterDiv vins spiritueux">
+            <h2>VINS Orange</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. </p>
+            <h3>8,99€</h3>
+        </div>
+        <div class="filterDiv bieres">
+            <h2>Bière Estaminet</h2><img src="Estaminet.png" alt="bière Estaminet" width="40%">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. </p>
+            <h3>8,99€</h3>
+        </div>
+        <div class="filterDiv vins">
+            <h2>VINS Red</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. </p>
+            <h3>8,99€</h3>
+        </div>
+        <div class="filterDiv bieres spiritueux">
+            <h2>Bière Pieuvre</h2><img src="Pieuvre.png" alt="bière Pieuvre" width="40%">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. </p>
+            <h3>8,99€</h3>
+        </div>
+        <div class="filterDiv bieres spiritueux">
+            <h2>Bière Samuel-Adams</h2><img src="Samuel-Adams.png" alt="bière Samuel-Adams" width="40%">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. </p>
+            <h3>8,99€</h3>
+        </div>
+        <div class="filterDiv vins">
+            <h2>VINS Blue</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. </p>
+            <h3>8,99€</h3>
+        </div>
+        <div class="filterDiv spiritueux">
+            <h2>Spiritueux Aberlour</h2><img src="Aberlour.png" alt="spiritueux Aberlour" width="40%">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. </p>
+            <h3>8,99€</h3>
+        </div>
+        <div class="filterDiv spiritueux">
+            <h2>Spiritueux Hankey Bannister</h2><img src="Hankey-Bannister.png" alt="spiritueux Hankey Bannister"
+                width="40%">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. </p>
+            <h3>8,99€</h3>
+        </div>
+        <div class="filterDiv vins bieres spiritueux">
+            <h2>VINS Melon</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. </p>
+            <h3>8,99€</h3>
+        </div>
+        <div class="filterDiv vins spiritueux">
+            <h2>VINS Kiwi</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. </p>
+            <h3>8,99€</h3>
+        </div>
+        <div class="filterDiv vins">
+            <h2>VINS Banana</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. </p>
+            <h3>8,99€</h3>
+        </div>
+        <div class="filterDiv vins">
+            <h2>VINS Lemon</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. </p>
+            <h3>8,99€</h3>
+        </div>
+        <div class="filterDiv spiritueux">
+            <h2>Spiritueux Red Bush</h2><img src="Red-Bush.png" alt=" spiritueux red bush" width="40%">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. </p>
+            <h3>8,99€</h3>
+        </div>
+        <div class="filterDiv spiritueux">
+            <h2>Spiritueux Silver-Seal</h2><img src="Silver-Seal.png" alt=" spiritueux Silver-Seal" width="40%">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. </p>
+            <h3>8,99€</h3>
+        </div>
+    </div>
+</body>
+
+</html>
